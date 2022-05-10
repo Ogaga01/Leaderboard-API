@@ -11,12 +11,15 @@ header.appendChild(title);
 body.appendChild(header)
 const main = document.createElement('main');
 body.appendChild(main);
+const divD = document.createElement('div');
+divD.setAttribute('id', 'main-div');
 const refreshSection = document.createElement('section');
 refreshSection.setAttribute('id', 'ref-section');
 const addScoreSection = document.createElement('section');
 addScoreSection.setAttribute('id', 'add-section');
-main.appendChild(refreshSection);
-main.appendChild(addScoreSection);
+divD.appendChild(refreshSection);
+divD.appendChild(addScoreSection);
+main.appendChild(divD)
 refreshSection.appendChild(refreshTitle());
 refreshSection.appendChild(displayScore());
 addScoreSection.appendChild(addScore());
