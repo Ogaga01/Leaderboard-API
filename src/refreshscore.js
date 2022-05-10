@@ -1,7 +1,7 @@
 function refreshTitle(){
     const divA = document.createElement('div');
     divA.setAttribute('id', 'ref-div');
-    const reftitle = document.createElement('h4');
+    const reftitle = document.createElement('h3');
     reftitle.innerHTML = "Refresh Score";
     const refButton = document.createElement('button');
     refButton.setAttribute('id', 'ref-button');
