@@ -1,6 +1,6 @@
 import './style.css';
 import { refreshTitle, displayScore } from './refreshscore.js';
-import { addScore } from './addscore.js';
+import addScore from './addscore.js';
 
 const body = document.querySelector('body');
 const header = document.createElement('header');

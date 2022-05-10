@@ -22,4 +22,4 @@ function addScore() {
   return divC;
 }
 
-export { addScore };
+export default addScore;
