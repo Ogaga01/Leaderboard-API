@@ -1,4 +1,6 @@
 import './style.css';
+import { refreshTitle } from './refreshscore.js';
+import { displayScore } from './refreshscore.js';
 
 
 const body = document.querySelector('body');
@@ -15,3 +17,5 @@ const addScoreSection = document.createElement('section');
 addScoreSection.setAttribute('id', 'add-section');
 main.appendChild(refreshSection);
 main.appendChild(addScoreSection);
+refreshSection.appendChild(refreshTitle());
+refreshSection.appendChild(displayScore());
