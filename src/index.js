@@ -1,7 +1,7 @@
 import './style.css';
 import { refreshTitle } from './refreshscore.js';
 import { displayScore } from './refreshscore.js';
-
+import { addScore } from './styles/addscore.js';
 
 const body = document.querySelector('body');
 const header = document.createElement('header');
@@ -19,3 +19,4 @@ main.appendChild(refreshSection);
 main.appendChild(addScoreSection);
 refreshSection.appendChild(refreshTitle());
 refreshSection.appendChild(displayScore());
+addScoreSection.appendChild(addScore());
