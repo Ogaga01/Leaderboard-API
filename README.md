@@ -1,5 +1,5 @@
 # Awesome-Books-ES6
-This project is a re-designing of AwesomeBooks, to make use of ES6 modules and other great ES6 features like arrow functions etc
+The leaderboard website displays scores submitted by different players. It also allows you to submit your score. All data is preserved thanks to the external Leaderboard API service.
 
 
 ## Built With
@@ -7,10 +7,12 @@ This project is a re-designing of AwesomeBooks, to make use of ES6 modules and o
 - Html
 - Css
 - Javascript
+- Webpack
+- API
 
 ## Live Demo 
 
-[Live Link](https://ogaga01.github.io/Awesome-Books-ES6/)
+[Live Link](https://ogaga01.github.io/Leaderboard-API/dist)
 
 ## Getting Started
 
