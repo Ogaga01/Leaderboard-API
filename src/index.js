@@ -7,9 +7,11 @@ const title = document.createElement('h1');
 title.innerHTML= "Leaderboard";
 header.appendChild(title);
 body.appendChild(header)
-
-
-
-let a = 6;
-let b = 3;
-console.log(a+b)
+const main = document.createElement('main');
+body.appendChild(main);
+const refreshSection = document.createElement('section');
+refreshSection.setAttribute('id', 'ref-section');
+const addScoreSection = document.createElement('section');
+addScoreSection.setAttribute('id', 'add-section');
+main.appendChild(refreshSection);
+main.appendChild(addScoreSection);
