@@ -1,31 +1,33 @@
 {
-  "name": "webpack-configuration",
+  "name": "webpack-setup",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "private": true,
   "scripts": {
-    "build": "webpack",
-    "dev": "webpack serve"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack serve --open",
+    "build": "webpack --mode development"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Ogaga01/Webpack-Configuration.git"
+    "url": "git+https://github.com/Ogaga01/Webpack-Setup.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Ogaga01/Webpack-Configuration/issues"
+    "url": "https://github.com/Ogaga01/Webpack-Setup/issues"
   },
-  "homepage": "https://github.com/Ogaga01/Webpack-Configuration#readme",
+  "homepage": "https://github.com/Ogaga01/Webpack-Setup#readme",
   "devDependencies": {
     "css-loader": "^6.7.1",
     "html-webpack-plugin": "^5.5.0",
-    "sass": "^1.51.0",
-    "sass-loader": "^12.6.0",
     "style-loader": "^3.3.1",
     "webpack": "^5.72.0",
     "webpack-cli": "^4.9.2",
     "webpack-dev-server": "^4.8.1"
+  },
+  "dependencies": {
+    "lodash": "^4.17.21"
   }
 }
