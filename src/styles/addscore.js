@@ -3,7 +3,7 @@
 function addScore(){
     const divC = document.createElement('div')
     divC.setAttribute('id', 'add-section-div');
-    const addTitle = document.createElement('h3');
+    const addTitle = document.createElement('h2');
     addTitle.setAttribute('id', 'add-title');
     addTitle.innerHTML = "Add your score"
     const name = document.createElement('input');
