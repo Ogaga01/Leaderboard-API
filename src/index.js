@@ -1,6 +1,7 @@
 import './style.css';
 import { refreshTitle, displayScore } from './modules/refreshscore.js';
 import addScore from './modules/addscore.js';
+import { fetchData, postData } from './modules/API.js';
 
 const body = document.querySelector('body');
 const header = document.createElement('header');
