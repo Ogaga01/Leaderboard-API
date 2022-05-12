@@ -3,7 +3,6 @@ import { fetchData, postData } from './modules/API.js';
 import { refreshTitle, displayScore } from './modules/refreshscore.js';
 import addScore from './modules/addscore.js';
 
-
 const body = document.querySelector('body');
 const header = document.createElement('header');
 const title = document.createElement('h1');
@@ -22,7 +21,6 @@ divD.append(refreshSection, addScoreSection);
 main.appendChild(divD);
 refreshSection.append(refreshTitle(), displayScore());
 addScoreSection.appendChild(addScore());
-
 
 // Generate scores
 fetchData();

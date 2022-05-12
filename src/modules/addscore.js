@@ -16,11 +16,11 @@ function addScore() {
   score.setAttribute('id', 'score');
   score.setAttribute('placeholder', 'Your score');
   const submit = document.createElement('button');
-  submit.setAttribute("type", "submit");
-  submit.setAttribute("value", "Submit");
+  submit.setAttribute('type', 'submit');
+  submit.setAttribute('value', 'Submit');
   submit.setAttribute('id', 'submit-score');
-  submit.innerHTML = "Submit"
-  form.append(name, score, submit)
+  submit.innerHTML = 'Submit';
+  form.append(name, score, submit);
   divC.append(addTitle, form);
   return divC;
 }
