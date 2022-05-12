@@ -4,6 +4,9 @@ function addScore() {
   const addTitle = document.createElement('h2');
   addTitle.setAttribute('id', 'add-title');
   addTitle.innerHTML = 'Add your score';
+  const form = document.createElement('form');
+  form.setAttribute('id', 'form');
+  form.setAttribute('action', '#');
   const name = document.createElement('input');
   name.setAttribute('type', 'text');
   name.setAttribute('id', 'name');
@@ -13,12 +16,12 @@ function addScore() {
   score.setAttribute('id', 'score');
   score.setAttribute('placeholder', 'Your score');
   const submit = document.createElement('button');
-  submit.innerHTML = 'Submit';
+  submit.setAttribute('type', 'submit');
+  submit.setAttribute('value', 'Submit');
   submit.setAttribute('id', 'submit-score');
-  divC.appendChild(addTitle);
-  divC.appendChild(name);
-  divC.appendChild(score);
-  divC.appendChild(submit);
+  submit.innerHTML = 'Submit';
+  form.append(name, score, submit);
+  divC.append(addTitle, form);
   return divC;
 }
 
