@@ -1,7 +1,8 @@
 import './style.css';
+import { fetchData, postData } from './modules/API.js';
 import { refreshTitle, displayScore } from './modules/refreshscore.js';
 import addScore from './modules/addscore.js';
-import { fetchData, postData } from './modules/API.js';
+
 
 const body = document.querySelector('body');
 const header = document.createElement('header');
@@ -21,3 +22,29 @@ divD.append(refreshSection, addScoreSection);
 main.appendChild(divD);
 refreshSection.append(refreshTitle(), displayScore());
 addScoreSection.appendChild(addScore());
+
+
+// Generate scores
+fetchData();
+
+// Add a score
+const container = document.querySelector('#form');
+const inputName = document.querySelector('#name');
+const inputScore = document.querySelector('#score');
+
+container.onsubmit = (e) => {
+  e.preventDefault();
+
+  const name = inputName.value;
+  const score = inputScore.value;
+  postData(name, score);
+
+  container.reset();
+};
+
+// Refresh button
+const refreshButton = document.querySelector('#ref-button');
+
+refreshButton.onclick = () => {
+  fetchData();
+};

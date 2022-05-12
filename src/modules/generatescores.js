@@ -1,7 +1,7 @@
-const scoresContainer = document.querySelector('#score-list');
-
 const generateScores = (_data) => {
-  container.innerHTML = '';
+  const scoresContainer = document.querySelector('#score-list');
+
+  scoresContainer.innerHTML = '';
 
   _data.forEach((item) => {
     scoresContainer.innerHTML += `<li>${item.user}: ${item.score}</li>`;
