@@ -15,10 +15,7 @@ function addScore() {
   const submit = document.createElement('button');
   submit.innerHTML = 'Submit';
   submit.setAttribute('id', 'submit-score');
-  divC.appendChild(addTitle);
-  divC.appendChild(name);
-  divC.appendChild(score);
-  divC.appendChild(submit);
+  divC.append(addTitle, name, score, submit);
   return divC;
 }
 

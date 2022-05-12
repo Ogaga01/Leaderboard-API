@@ -6,8 +6,7 @@ function refreshTitle() {
   const refButton = document.createElement('button');
   refButton.setAttribute('id', 'ref-button');
   refButton.innerHTML = 'Refresh';
-  divA.appendChild(reftitle);
-  divA.appendChild(refButton);
+  divA.append(reftitle, refButton);
   return divA;
 }
 
@@ -17,6 +16,7 @@ function displayScore() {
   const list = document.createElement('ul');
   list.setAttribute('id', 'score-list');
   divB.appendChild(list);
+  return divB;
 }
 
 export { refreshTitle, displayScore };
